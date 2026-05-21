@@ -1,14 +1,93 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-    <head>
-    <meta charset="UTF-8"
-    <title>Minha Primeira Página</title>
-      </head>
-      <body> 
-        <h1>Bem-vindo ao meu site</h1>
+<html lang="pt-BR">
 
-<p>Este é um parágrafo sobre <strong>aprendizado</strong>.</p>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CINEVIEW | Seu Streaming</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 
-<a href="https://google.com">Clique aqui para pesquisar</a>
-      </body>
- </html>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>CINEVIEW</header>
+
+    <div class="welcome-banner">
+        <h2>Explore o melhor do cinema</h2>
+    </div>
+
+    <section class="chamada">
+        <div class="chamada-texto">
+            <h1>ATRAVÉS DO ARANHAVERSO</h1>
+            <p>#homem-aranha #animação</p>
+        </div>
+
+        <div class="chamada-video">
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/gt_fAE1Eg2Q?si=EEv-tsY_b1B2OwKE"
+                    title="YouTube video player" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <section class="categoria">
+        <h2>Principais Lançamentos</h2>
+        <div class="categoria-videos">
+            <a href="https://www.youtube.com/watch?v=cs15QqG6Gjc" target="_blank" rel="noopener">
+                <img src="https://img.youtube.com/vi/cs15QqG6Gjc/maxresdefault.jpg" alt="Video 1" onerror="this.src='https://placehold.co/600x400?text=Vídeo+Indisponível'"/>
+            </a>
+        </div>
+    </section>
+
+</body>
+</html>
+:root {
+    --bg-color: #f4f5f7;
+    --card-bg: #ffffff;
+    --text-primary: #1a202c;
+    --text-secondary: #4a5568;
+    --accent-color: #e50914; /* Vermelho Netflix */
+    --shadow-sm: 0 2px 4px rgba(0,0,0,0.05);
+    --shadow-md: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Chakra Petch", sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-primary);
+    line-height: 1.6;
+    padding-bottom: 3rem;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #ffffff;
+    color: var(--accent-color);
+    font-size: 2.2rem;
+    font-weight: 800;
+    padding: 1.2rem 2rem;
+    text-align: center;
+    box-shadow: var(--shadow-sm);
+    letter-spacing: 4px;
+    border-bottom: 2px solid #e2e8f0;
+}
+
+/* Banner de Boas-vindas */
+.welcome-banner {
+    max-width: 1200px;
+    margin: 2rem auto 1rem auto;
+    padding:
