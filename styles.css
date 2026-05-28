@@ -1,6 +1,6 @@
 body {
- background: #d90000;
-background: radial-gradient(circle,rgba(217, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 19%, rgba(158, 0, 0, 1) 24%, rgba(8, 0, 0, 1) 35%, rgba(97, 0, 0, 1) 42%, rgba(122, 0, 0, 1) 47%, rgba(156, 0, 0, 1) 50%, rgba(0, 0, 0, 1) 77%);
+ background: #2400d9;
+background: radial-gradient(circle,rgb(43, 0, 217) 0%, rgba(0, 0, 0, 1) 19%, rgb(11, 0, 158) 24%, rgba(8, 0, 0, 1) 35%, rgb(16, 0, 97) 42%, rgb(33, 0, 122) 47%, rgb(62, 0, 156) 50%, rgba(0, 0, 0, 1) 77%);
 }
 
 header {
